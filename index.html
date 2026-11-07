@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Matt Zhang | Portfolio</title>
+  <title>Matt Zhang | Game Portfolio</title>
 
   <style>
     * {
@@ -47,13 +48,18 @@
       font-size: 25px;
     }
 
+    h3 {
+      margin: 25px 0 10px;
+      font-size: 17px;
+    }
+
     p {
       color: #a7adb7;
       line-height: 1.6;
     }
 
     .project {
-      margin-bottom: 24px;
+      margin-bottom: 65px;
     }
 
     .controls {
@@ -67,6 +73,7 @@
       aspect-ratio: 4 / 3;
       border: 1px solid #30343b;
       background: #000;
+      margin-top: 24px;
     }
 
     .game-frame iframe {
@@ -85,6 +92,12 @@
       text-decoration: underline;
     }
 
+    .divider {
+      border: 0;
+      border-top: 1px solid #30343b;
+      margin: 55px 0;
+    }
+
     footer {
       max-width: 1080px;
       margin: 0 auto;
@@ -92,6 +105,20 @@
       border-top: 1px solid #30343b;
       color: #777e89;
       font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding-top: 35px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .game-frame {
+        aspect-ratio: 16 / 9;
+      }
     }
   </style>
 </head>
@@ -107,17 +134,39 @@
 
   <main>
 
+    <!-- PROJECT 1: ZELDA -->
+
     <section class="project">
-      <h2>The Legend of Zelda — Unity Project</h2>
+
+      <h2>
+        Project 1 — The Legend of Zelda
+      </h2>
 
       <p>
-        A recreation of the original Legend of Zelda dungeon,
-        featuring a custom four-room level built around
-        Fast and Slow movement tiles.
+        A recreation of the original Legend of Zelda
+        dungeon, featuring a custom four-room level
+        built around Fast and Slow movement tiles.
       </p>
 
+      <h3>Technologies</h3>
+
+      <p>
+        Unity, C#, 2D Game Development,
+        Tile-Based Level Design, Collision Detection.
+      </p>
+
+      <h3>My Contributions</h3>
+
+      <p>
+        Developed the custom four-room level,
+        implemented Fast and Slow movement mechanics,
+        and integrated the custom level into the
+        existing Zelda gameplay system.
+      </p>
+
+      <h3>Controls</h3>
+
       <p class="controls">
-        <strong>Controls:</strong>
         WASD / Arrow Keys — Move |
         X — Sword |
         Z — Item |
@@ -126,25 +175,162 @@
       </p>
 
       <p>
-        <a href="zelda/index.html" target="_blank" rel="noopener">
-          Open Game in New Tab ↗
+        <a
+          href="zelda/index.html"
+          target="_blank"
+          rel="noopener">
+          Open Zelda in New Tab ↗
         </a>
       </p>
+
+      <div class="game-frame">
+        <iframe
+          src="zelda/index.html"
+          title="The Legend of Zelda Unity WebGL Game"
+          allowfullscreen>
+        </iframe>
+      </div>
+
     </section>
 
-    <div class="game-frame">
-      <iframe
-        src="zelda/index.html"
-        title="The Legend of Zelda Unity WebGL Game"
-        allowfullscreen>
-      </iframe>
-    </div>
+    <hr class="divider">
+
+    <!-- PROJECT 2: BALL BATTLE -->
+
+    <section class="project">
+
+      <h2>
+        Project 2 — Ball Battle: Shrinking Arena
+      </h2>
+
+      <p>
+        Ball Battle: Shrinking Arena is a single-player
+        2D survival game inspired by Agar.io and
+        Ball Battle.
+      </p>
+
+      <p>
+        The player controls a ball inside a shrinking
+        square arena and competes against
+        computer-controlled enemy balls.
+        Collect food to grow larger, consume smaller
+        opponents, and survive until all enemies
+        have been eliminated.
+      </p>
+
+      <h3>Core Mechanic</h3>
+
+      <p>
+        The arena gradually shrinks throughout the
+        match, reducing the available space and
+        increasing encounters between opponents.
+      </p>
+
+      <p>
+        Players must balance collecting food,
+        avoiding stronger enemies, attacking
+        smaller opponents, and staying inside
+        the shrinking arena.
+      </p>
+
+      <h3>Difficulty Settings</h3>
+
+      <p>
+        Easy: 3 enemies, arena shrinks by
+        5 units every 30 seconds.
+      </p>
+
+      <p>
+        Medium: 5 enemies, arena shrinks by
+        10 units every 20 seconds.
+      </p>
+
+      <p>
+        Hard: 5 enemies, arena shrinks by
+        20 units every 10 seconds.
+      </p>
+
+      <h3>Enemy AI</h3>
+
+      <p>
+        The game includes five rule-based
+        enemy AI personalities:
+        Balanced, Aggressive, Defensive,
+        Greedy, and Hunter.
+      </p>
+
+      <p>
+        Enemies can collect food, grow larger,
+        chase smaller opponents, escape stronger
+        opponents, and consume other enemies.
+      </p>
+
+      <h3>Additional Features</h3>
+
+      <p>
+        Real-time size-based leaderboard,
+        randomized ball colors, difficulty
+        selection, fullscreen settings,
+        win and loss conditions,
+        and a complete restart system.
+      </p>
+
+      <h3>Technologies</h3>
+
+      <p>
+        Unity 6, C#, Unity 2D Physics,
+        Rule-Based Artificial Intelligence,
+        Collision Detection, UI Development,
+        and WebGL.
+      </p>
+
+      <h3>My Contributions</h3>
+
+      <p>
+        Designed and developed the game mechanics,
+        player movement, food collection,
+        ball consumption, enemy AI behaviors,
+        dynamic arena shrinking, difficulty system,
+        real-time leaderboard, user interface,
+        and win/loss gameplay loop.
+      </p>
+
+      <h3>Controls</h3>
+
+      <p class="controls">
+        Move — Use the in-game movement controls.
+        Collect food, grow larger, and consume
+        smaller opponents while avoiding the
+        shrinking arena boundary.
+      </p>
+
+      <p>
+        <a
+          href="ballbattle/index.html"
+          target="_blank"
+          rel="noopener">
+          Open Ball Battle in New Tab ↗
+        </a>
+      </p>
+
+      <div class="game-frame">
+        <iframe
+          src="ballbattle/index.html"
+          title="Ball Battle Shrinking Arena Unity WebGL Game"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </section>
 
   </main>
 
   <footer>
     Matt Zhang |
-    <a href="https://github.com/zhan9148-source" target="_blank" rel="noopener">
+    <a
+      href="https://github.com/zhan9148-source"
+      target="_blank"
+      rel="noopener">
       GitHub
     </a>
   </footer>
